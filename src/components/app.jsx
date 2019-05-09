@@ -1,21 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+import flats from '../../data/flats';
 import FlatList from './flat_list';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      flats: []
-    };
-  }
-
-  render() {
-    return (
-      <FlatList />
-    );
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <div className="flat-list">
+        <FlatList flats={flats} />
+      </div>
+      <div className="map-container" />
+    </div>
+  );
+};
 
 export default App;

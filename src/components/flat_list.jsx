@@ -3,11 +3,7 @@ import React from 'react';
 import Flat from './flat';
 
 const FlatList = ({ flats }) => {
-  return (
-    <div>
-      {flats.map(flat => <Flat id={flat.id} />)}
-    </div>
-  );
+  return flats.map((flat, i) => <Flat key={i + 1} />);
 };
 
 export default FlatList;
