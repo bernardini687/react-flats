@@ -6,19 +6,19 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
-      lat: 59.95,
-      lng: 30.33
+      lat: 48.864716,
+      lng: 2.349014
     },
-    zoom: 11
+    zoom: 12
   };
 
-  render({ center, zoom }) {
+  render() {
     return (
-      <div style={{ height: '100vh', width: '100%' }}>
+      <div style={{ height: 'calc(100vh - 20px)', width: '100%' }}>
         <GoogleMapReact
           // bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
-          defaultCenter={center}
-          defaultZoom={zoom}
+          defaultCenter={this.props.center}
+          defaultZoom={this.props.zoom}
         >
           <AnyReactComponent
             lat={59.955413}

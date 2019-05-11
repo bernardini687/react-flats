@@ -16,7 +16,7 @@ body {
 }
 
 .map-container {
-  height: 100vh;
+  height: calc(100vh - 20px);
   width: 40%;
   position: sticky !important; /* !important to override Gmaps inline CSS */
   top: 0 !important;
