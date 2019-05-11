@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedFlat: data[4],
+      selectedFlat: data[0],
       flats: data
     };
   }
@@ -23,7 +23,7 @@ class App extends React.Component {
     return (
       <div>
         <div className="flat-list">
-          <FlatList flats={flats} />
+          <FlatList flats={flats} selectedFlat={selectedFlat} />
         </div>
         <div className="map-container">
           <GoogleMapReact defaultCenter={this.center()} defaultZoom={12} />

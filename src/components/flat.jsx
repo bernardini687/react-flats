@@ -2,13 +2,13 @@
 
 import React from 'react';
 
-const Flat = ({ info }) => {
+const Flat = ({ info, selected }) => {
   const divStyle = {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(${info.imageUrl})`
   };
 
   return (
-    <div className="card" style={divStyle}>
+    <div className={selected ? 'active card' : 'card'} style={divStyle}>
       <div className="card-category">
         {info.price + ' ' + info.currency}
       </div>
