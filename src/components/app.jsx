@@ -13,6 +13,10 @@ class App extends React.Component {
     };
   }
 
+  selectFlat = (event) => {
+    console.log(event.target);
+  }
+
   center() {
     const { selectedFlat } = this.state;
     return { lat: selectedFlat.lat, lng: selectedFlat.lng };
@@ -23,7 +27,7 @@ class App extends React.Component {
     return (
       <div>
         <div className="flat-list">
-          <FlatList flats={flats} selectedFlat={selectedFlat} />
+          <FlatList selectFlatFn={this.selectFlat} flats={flats} selectedFlat={selectedFlat} />
         </div>
         <div className="map-container">
           <GoogleMapReact defaultCenter={this.center()} defaultZoom={12} />
