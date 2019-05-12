@@ -13,8 +13,8 @@ class App extends React.Component {
     };
   }
 
-  selectFlat = (event) => {
-    console.log(event.target);
+  selectFlat = (index) => {
+    this.setState({ selectedFlat: data[index] });
   }
 
   center() {
@@ -30,7 +30,7 @@ class App extends React.Component {
           <FlatList selectFlatFn={this.selectFlat} flats={flats} selectedFlat={selectedFlat} />
         </div>
         <div className="map-container">
-          <GoogleMapReact defaultCenter={this.center()} defaultZoom={12} />
+          <GoogleMapReact center={this.center()} defaultZoom={12} />
         </div>
       </div>
     );

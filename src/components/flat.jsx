@@ -5,8 +5,11 @@
 import React from 'react';
 
 class Flat extends React.Component {
-  handleClick = (event) => {
-    console.log(event.target);
+  handleClick = () => {
+    const { selectFlatFn, index } = this.props;
+    if (selectFlatFn) {
+      selectFlatFn(index);
+    }
   };
 
   render() {
