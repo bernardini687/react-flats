@@ -32,7 +32,7 @@ class App extends React.Component {
         </div>
         <div className="map-container">
           <GoogleMapReact center={this.center()} defaultZoom={12}>
-            <Marker center={this.center()} />
+            <Marker lat={this.state.selectedFlat.lat} lng={this.state.selectedFlat.lng} />
           </GoogleMapReact>
         </div>
       </div>

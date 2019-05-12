@@ -17,7 +17,7 @@ const data = [
   },
   {
     name: "Super 60m2 in trendy neighborhood!",
-    imageUrl: "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat3.jpg",
+    imageUrl: "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat5.jpg",
     price: 150,
     currency: "EUR",
     lat: 48.885312,
@@ -32,12 +32,12 @@ const data = [
     lng: 2.343371
   },
   {
-    name: "Superbe vue à 2 min du Sacré Coeur",
-    imageUrl: "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat5.jpg",
+    name: "Splendido appartamento a Cannobio",
+    imageUrl: "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat3.jpg",
     price: 135,
     currency: "EUR",
-    lat: 48.888839,
-    lng: 2.339208
+    lat: 45.92136,
+    lng: 8.55183
   },
   {
     name: "Bohemian and Chic in Paris",
