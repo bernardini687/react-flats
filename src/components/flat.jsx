@@ -1,10 +1,12 @@
 /* eslint prefer-template: off */
+/* eslint jsx-a11y/click-events-have-key-events: off */
+/* eslint jsx-a11y/no-static-element-interactions: off */
 
 import React from 'react';
 
 class Flat extends React.Component {
   handleClick = (event) => {
-    console.log(event);
+    console.log(event.target);
   };
 
   render() {
